@@ -5,13 +5,10 @@ function game({ game }) {
   return (
     <div className='game'>
       <div>
-        <div>
-          <img src={image} width={250} height={150} />
-          <h4>{title}</h4>
-          <h5>{description}</h5>
-          <a href={link} target='_blank'>Videoyu izlemek için</a>
-
-        </div>
+        <img className='image' src={image} />
+        <h4 className='title'>{title}</h4>
+        <p className='game-desc'>{description}</p>
+        <div className='game-link'><a className='link' href={link} target='_blank'>Videoyu izlemek için tıkla</a></div>
       </div>
     </div>
   )
